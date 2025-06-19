@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary-100: #d0d0d1;
+  --color-primary-200: #a1a1a3;
+  --color-primary-300: #737274;
+  --color-primary-400: #2c2c2f;
+  --color-primary-500: #151418;
+  --color-primary-600: #111013;
+  --color-primary-700: #0d0c0e;
+  --color-primary-800: #08080a;
+  --color-primary-900: #040405;
+
+  --color-accent-100: #e1f8cf;
+  --color-accent-200: #c3f19f;
+  --color-accent-300: #acf773;
+  --color-accent-400: #86e33e;
+  --color-accent-500: #68dc0e;
+  --color-accent-600: #53b00b;
+  --color-accent-700: #3e8408;
+  --color-accent-800: #2a5806;
+  --color-accent-900: #152c03;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  /* NAVLINK */
+  .navLink {
+    @apply md:hover:text-accent-500 relative transition-all duration-300;
+  }
+  .navLink::after {
+    @apply bg-accent-500 absolute -bottom-1 left-0 h-0.5 w-0 rounded-full transition-all duration-300 content-[''];
+  }
+  .navLink:hover::after {
+    @apply md:w-full;
+  }
+
+  /* TODO: CHECK PARA SAN */
+  .active {
+    @apply bg-accent-500 text-primary-500 md:text-accent-500 rounded-lg md:bg-transparent;
+  }
+
+  .gradient-highlight {
+    @apply from-accent-300 to-accent-500 bg-gradient-to-t bg-clip-text;
+  }
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+
+  @variant sm {
+    max-width: 690px;
+  }
+
+  @variant md {
+    max-width: 920px;
+    padding-inline: 40px;
+  }
+
+  @variant lg {
+    max-width: 1124px;
+    padding-inline: 80px;
+  }
+
+  @variant xl {
+    max-width: 1300px;
+    padding-inline: 120px;
+  }
+
+  @variant 2xl {
+    max-width: 1536px;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-mono), Arial, Helvetica, sans-serif;
+}
+
+/* HAMBURGER MENU ANIMATION */
+.menu {
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+  height: 20px;
+}
+
+.menu span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 50px;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.menu span:nth-child(1) {
+  top: 0px;
+}
+
+.menu span:nth-child(2) {
+  top: 10px;
+}
+
+.menu span:nth-child(3) {
+  top: 20px;
+  right: 0;
+  width: 75%;
+  height: 3.5px !important;
+}
+
+.menu.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+.menu.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+  width: 100%;
 }
