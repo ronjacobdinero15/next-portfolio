@@ -6,8 +6,8 @@ type TextProps = {
 
 function Text({ size = "h4", className, children }: TextProps) {
   const sizes = {
-    h1: " text-2xl md:text-3xl lg:text-4xl",
-    h2: " text-xl md:text-2xl",
+    h1: " text-5xl md:text-6xl",
+    h2: " text-3xl md:text-4xl",
     h3: " text-lg",
     h4: " text-base",
     h5: " text-sm",

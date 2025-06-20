@@ -10,12 +10,15 @@
     "clean": "rm -rf .next"
   },
   "dependencies": {
+    "framer-motion": "^12.18.1",
     "next": "15.3.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -25,6 +28,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack": "^5.99.9"
   }
 }
