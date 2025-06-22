@@ -134,7 +134,7 @@ const TECH_STACK = [
 function About() {
   return (
     // flex h-dvh flex-col justify-center gap-y-1 tracking-wide md:items-center
-    <Section id="about">
+    <Section id="about" className="lg:h-dvh">
       <SectionLink sectionName="About Me" />
 
       <div className="grid gap-5 lg:grid-cols-2">
