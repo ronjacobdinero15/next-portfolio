@@ -37,9 +37,6 @@
   .gradient-highlight {
     @apply from-accent-300 to-accent-500 bg-gradient-to-t bg-clip-text text-transparent;
   }
-  .outlineStyle {
-    @apply focus:ring-accent-500 focus:rounded-lg focus:ring-2 focus:outline-none focus:ring-inset;
-  }
   .projectBg {
     @apply absolute top-0 right-0 bottom-0 left-0 bg-[linear-gradient(to_right,#484848,transparent_1px),linear-gradient(to_bottom,#484848,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_60%_at_60%_0%,#000_80%,transparent_110%)] bg-[size:4rem_4rem];
   }

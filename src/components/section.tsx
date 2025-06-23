@@ -1,5 +1,5 @@
 type SectionProps = {
-  id?: "intro" | "about" | "projects" | "experiences" | "contact"
+  id?: "intro" | "about" | "projects" | "experience" | "contact"
   children: React.ReactNode
   className?: string
 }

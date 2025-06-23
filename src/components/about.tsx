@@ -137,7 +137,7 @@ function About() {
     <Section id="about" className="lg:h-dvh">
       <SectionLink sectionName="About Me" />
 
-      <div className="grid gap-5 lg:grid-cols-2">
+      <div className="grid gap-5 text-pretty lg:grid-cols-2">
         <div>
           <Reveal>
             <Text className="first-letter first-letter:bg-accent-600 leading-7 first-letter:float-left first-letter:mr-2 first-letter:rounded-sm first-letter:p-2 first-letter:text-2xl first-letter:font-bold">
@@ -154,7 +154,7 @@ function About() {
           <br />
 
           <Reveal>
-            <Text>
+            <Text className="leading-7">
               I am passionate about building scalable, performant applications
               with clean and maintainable code.
             </Text>
@@ -168,7 +168,7 @@ function About() {
             </Reveal>
 
             <Reveal>
-              <div className="[&_span]:text-accent-500 space-y-3">
+              <div className="[&_span]:text-accent-500 space-y-3 [&_span]:leading-7">
                 <Text>
                   <span className="font-bold">Adaptable:</span> I am a very
                   flexible person, I quickly align with your needs.
@@ -225,7 +225,9 @@ function About() {
           <Reveal>
             <div className="mb-3 flex items-center gap-x-1">
               <HiOutlineCpuChip className="text-accent-500 size-8" />
-              <span className="text-xl font-semibold">Tech Stack</span>
+              <Text size="h2" className="font-semibold">
+                Tech Stack
+              </Text>
             </div>
           </Reveal>
 

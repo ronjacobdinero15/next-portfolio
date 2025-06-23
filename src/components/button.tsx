@@ -17,14 +17,10 @@ function Button({
     outline: " border border-accent-500 !text-accent-500 hover:bg-accent-900  ",
   }
   /*   const styles = {
-    primary:
-      base +
-      " sm:group-hover:text-primary-400 sm:group-hover:bg-accent-500 hover:bg-accent-500 bg-primary-400 sm:px-4 sm:py-2 px-3 py-[6px]",
     contact:
       base +
       " contactBtn gap-x-2 bg-accent-500 hover:bg-accent-600 px-5 py-2 text-stone-100 focus:bg-accent-600 ",
-    projectToggle: base + " mx-auto my-5 px-2 pb-3 pt-5 focus:!ring-0",
-    na: "cursor-not-allowed rounded-lg bg-red-500 px-4 py-2 transition-colors hover:bg-red-600 focus:bg-red-600 focus:outline-none",
+
   } */
 
   return (

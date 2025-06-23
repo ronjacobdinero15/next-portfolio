@@ -2,9 +2,9 @@ import Button from "@/components/button"
 import LinkBtn from "@/components/link-btn"
 import Reveal from "@/components/reveal"
 import Text from "@/components/text"
-import UnderlineIcon from "@/public/images/icons/underline.svg"
+import UnderlineIcon from "@/assets/images/icons/underline.svg"
 import { HiOutlineRocketLaunch } from "react-icons/hi2"
-import DownloadIcon from "@/public/images/icons/download.svg"
+import DownloadIcon from "@/assets/images/icons/download.svg"
 import Section from "@/components/section"
 
 function Intro() {
@@ -18,18 +18,18 @@ function Intro() {
 
       <Reveal>
         <div className="flex font-bold">
-          <Text size="h1">Ron Jacob</Text>
-          <Text size="h1" className="hidden sm:ml-3 sm:inline">
+          <Text size="h0">Ron Jacob</Text>
+          <Text size="h0" className="hidden sm:ml-3 sm:inline">
             Dinero
           </Text>
-          <Text size="h1" className="text-accent-500 pl-[2px] text-4xl">
+          <Text size="h0" className="text-accent-500 pl-[2px] text-4xl">
             .
           </Text>
         </div>
       </Reveal>
 
       <Reveal>
-        <Text size="h1" className="gradient-highlight font-bold">
+        <Text size="h0" className="gradient-highlight font-bold">
           Full-Stack Developer
         </Text>
       </Reveal>
@@ -42,7 +42,7 @@ function Intro() {
       </Reveal>
 
       <Reveal>
-        <Text className="my-3 max-w-3xl leading-7 text-stone-200 md:text-center">
+        <Text className="my-3 max-w-3xl leading-7 text-pretty text-stone-200 md:text-center">
           I am a graduating student from the course of Computer Science from
           EAC-Cavite, Philippines. I am mostly self-taught developer focusing on
           web technologies especially Next.js. I enjoy creating web applications
