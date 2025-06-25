@@ -15,7 +15,6 @@ import {
   FaLinkedin,
   FaReact,
 } from "react-icons/fa"
-import { HiOutlineCpuChip } from "react-icons/hi2"
 import { IoArrowRedoOutline, IoLogoJavascript } from "react-icons/io5"
 import { RiNextjsFill, RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri"
 import {
@@ -24,11 +23,14 @@ import {
   SiPhp,
   SiPhpmyadmin,
   SiPrisma,
+  SiReacthookform,
   SiReactquery,
   SiReactrouter,
   SiRedux,
+  SiShadcnui,
   SiStyledcomponents,
   SiTypescript,
+  SiVite,
 } from "react-icons/si"
 
 const TECH_STACK = [
@@ -41,32 +43,44 @@ const TECH_STACK = [
     icon: <SiTypescript />,
   },
   {
-    name: "Prisma",
-    icon: <SiPrisma />,
-  },
-  {
     name: "React",
     icon: <FaReact />,
+  },
+  {
+    name: "Prisma",
+    icon: <SiPrisma />,
   },
   {
     name: "Supabase",
     icon: <RiSupabaseFill />,
   },
   {
-    name: "phpMyAdmin",
-    icon: <SiPhpmyadmin />,
-  },
-  {
     name: "MySQL",
     icon: <SiMysql />,
   },
   {
-    name: "Zustand",
+    name: "phpMyAdmin",
+    icon: <SiPhpmyadmin />,
   },
 
   {
+    name: "Zustand",
+  },
+  {
+    name: "Redux/RTK",
+    icon: <SiRedux />,
+  },
+  {
     name: "Tailwind",
     icon: <RiTailwindCssFill />,
+  },
+  {
+    name: "React Query",
+    icon: <SiReactquery />,
+  },
+  {
+    name: "React Hook Form",
+    icon: <SiReacthookform />,
   },
   {
     name: "React Native",
@@ -77,8 +91,32 @@ const TECH_STACK = [
     icon: <SiExpo />,
   },
   {
-    name: "JavaScript",
-    icon: <IoLogoJavascript />,
+    name: "Vite",
+    icon: <SiVite />,
+  },
+  {
+    name: "Shadcn",
+    icon: <SiShadcnui />,
+  },
+  {
+    name: "styled-components",
+    icon: <SiStyledcomponents />,
+  },
+  {
+    name: "Git",
+    icon: <FaGitAlt />,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithubAlt />,
+  },
+  {
+    name: "Figma",
+    icon: <FaFigma />,
+  },
+  {
+    name: "React Router",
+    icon: <SiReactrouter />,
   },
   {
     name: "HTML",
@@ -88,39 +126,17 @@ const TECH_STACK = [
     name: "CSS",
     icon: <FaCss3Alt />,
   },
+
   {
-    name: "Redux/RTK",
-    icon: <SiRedux />,
-  },
-  {
-    name: "GitHub",
-    icon: <FaGithubAlt />,
+    name: "JavaScript",
+    icon: <IoLogoJavascript />,
   },
 
   {
     name: "Java",
     icon: <FaJava />,
   },
-  {
-    name: "Figma",
-    icon: <FaFigma />,
-  },
-  {
-    name: "styled-components",
-    icon: <SiStyledcomponents />,
-  },
-  {
-    name: "React Query",
-    icon: <SiReactquery />,
-  },
-  {
-    name: "React Router",
-    icon: <SiReactrouter />,
-  },
-  {
-    name: "Git",
-    icon: <FaGitAlt />,
-  },
+
   {
     name: "Bootstrap",
     icon: <FaBootstrap />,
@@ -133,8 +149,7 @@ const TECH_STACK = [
 
 function About() {
   return (
-    // flex h-dvh flex-col justify-center gap-y-1 tracking-wide md:items-center
-    <Section id="about" className="lg:h-dvh">
+    <Section id="about" className="scroll-mt-16 lg:h-dvh lg:scroll-mt-0">
       <SectionLink sectionName="About Me" />
 
       <div className="grid gap-5 text-pretty lg:grid-cols-2">
@@ -223,12 +238,9 @@ function About() {
 
         <div>
           <Reveal>
-            <div className="mb-3 flex items-center gap-x-1">
-              <HiOutlineCpuChip className="text-accent-500 size-8" />
-              <Text size="h2" className="font-semibold">
-                Tech Stack
-              </Text>
-            </div>
+            <Text size="h2" className="mb-3 font-bold">
+              My Toolkit Stack
+            </Text>
           </Reveal>
 
           <div className="relative">
@@ -239,7 +251,9 @@ function About() {
                     {tech?.icon && tech.icon}
                   </span>
                   <Reveal>
-                    <Button variant="secondary">{tech.name}</Button>
+                    <Button variant="secondary" size="small">
+                      <Text size="h5">{tech.name}</Text>
+                    </Button>
                   </Reveal>
                 </li>
               ))}

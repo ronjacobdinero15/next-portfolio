@@ -8,7 +8,7 @@ type ExperienceProps = {
 
 function Experience({ exp }: ExperienceProps) {
   return (
-    <li className="py-5 tracking-wide text-pretty first:pt-0 last:pb-0">
+    <li className="py-5 tracking-wide text-pretty first:pt-0 last:pb-0 md:py-7">
       <div className="space-y-1.5">
         <Reveal>
           <Text size="h2" className="text-accent-500 font-semibold">
@@ -30,7 +30,7 @@ function Experience({ exp }: ExperienceProps) {
         </Reveal>
 
         <Reveal>
-          <Text className="leading-7 text-stone-300">{exp.description}</Text>
+          <Text className="text-stone-300 lg:leading-7">{exp.description}</Text>
         </Reveal>
 
         <Reveal>
@@ -38,9 +38,9 @@ function Experience({ exp }: ExperienceProps) {
             {exp.skillsUsed.map((skill: string) => (
               <li
                 key={skill}
-                className="bg-primary-400/50 rounded-md px-2 py-1 md:px-3 md:py-2"
+                className="bg-primary-400/50 border-primary-400 rounded-md border px-2 py-1 select-none md:px-3 md:py-2"
               >
-                {skill}
+                <Text>{skill}</Text>
               </li>
             ))}
           </ul>

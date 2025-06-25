@@ -2,18 +2,16 @@ import Section from "@/components/section"
 import SectionLink from "@/components/section-link"
 import Experience from "@/components/experience"
 import { ExperienceType } from "@/constants/types"
-import rocLogo from "@/assets/images/experience/roc.jpg"
-import jvlLogo from "@/assets/images/experience/jvl.png"
 
 const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "JVL Electronics",
-    companyLogo: jvlLogo,
     employmentType: "Freelance",
     jobTitle: "Full Stack Developer | UI/UX Designer",
     dateWorked: "May 2025 - July 2025",
     workedLength: "3 mos",
-    description: "Freelancing for JVL Electronics.",
+    description:
+      "Freelancing for JVL Electronics which is an e-commerce for Korean car parts.",
     skillsUsed: [
       "Next.js",
       "React.js",
@@ -30,7 +28,6 @@ const EXPERIENCES: ExperienceType[] = [
   },
   {
     companyName: "ROC.PH Digital Marketing Services",
-    companyLogo: rocLogo,
     employmentType: "Internship",
     jobTitle: "Frontend Developer | UI/UX Designer",
     dateWorked: "Jun 2024 - Jul 2024",
@@ -52,7 +49,7 @@ const EXPERIENCES: ExperienceType[] = [
 
 function Experiences() {
   return (
-    <Section id="experience">
+    <Section id="experience" className="scroll-mt-16 sm:h-dvh sm:scroll-mt-0">
       <SectionLink sectionName="Experience" />
 
       <ul className="divide-y-[0.5px] divide-stone-700">

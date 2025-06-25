@@ -10,13 +10,13 @@ function Contact() {
     <Section id="contact" className="h-dvh !tracking-wide">
       <div className="relative grid place-items-center">
         <Reveal>
-          <p className="text-accent-500 text-center text-xl font-semibold shadow-md sm:text-2xl xl:text-3xl">
+          <p className="text-accent-500 text-center text-2xl font-semibold shadow-md xl:text-3xl">
             Hit me up
           </p>
         </Reveal>
 
         <Reveal>
-          <p className="after:text-accent-500 flex items-center text-8xl font-bold text-nowrap after:pb-1 after:text-8xl after:content-['.']">
+          <p className="after:text-accent-500 mb-2 flex items-center text-5xl font-bold text-nowrap after:text-5xl after:content-['.'] sm:text-6xl sm:after:text-6xl lg:text-8xl lg:after:text-8xl">
             Contact Me
           </p>
         </Reveal>
@@ -24,10 +24,13 @@ function Contact() {
         <Reveal>
           <Link
             href="mailto:ronjacobdinero15@gmail.com"
-            className="group flex items-center justify-center gap-1 focus:px-3 sm:gap-2 sm:text-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center justify-center gap-1 sm:gap-2"
+            aria-label="My email"
           >
-            <HiEnvelope className="group-hover:fill-accent-500 size-7 transition-colors sm:size-10" />
-            <span className="group-hover:text-accent-500 shadow-md transition-colors">
+            <HiEnvelope className="group-hover:fill-accent-500 size-8 transition-colors" />
+            <span className="group-hover:text-accent-500 text-xl shadow-md transition-colors">
               ronjacobdinero15@gmail.com
             </span>
           </Link>
@@ -35,7 +38,7 @@ function Contact() {
 
         <Image
           src={circlePattern}
-          className="absolute top-1/2 left-1/2 -z-10 aspect-square max-w-[250px] -translate-x-1/2 -translate-y-1/2 opacity-75 sm:max-w-[320px] xl:max-w-[500px]"
+          className="absolute top-1/2 left-1/2 -z-10 aspect-square max-w-[270px] -translate-x-1/2 -translate-y-1/2 opacity-75 sm:max-w-[320px] lg:max-w-[400px]"
           alt=""
         />
       </div>

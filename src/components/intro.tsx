@@ -1,11 +1,10 @@
-import Button from "@/components/button"
+import UnderlineIcon from "@/assets/images/icons/underline.svg"
 import LinkBtn from "@/components/link-btn"
 import Reveal from "@/components/reveal"
-import Text from "@/components/text"
-import UnderlineIcon from "@/assets/images/icons/underline.svg"
-import { HiOutlineRocketLaunch } from "react-icons/hi2"
-import DownloadIcon from "@/assets/images/icons/download.svg"
 import Section from "@/components/section"
+import Text from "@/components/text"
+import { HiOutlineRocketLaunch } from "react-icons/hi2"
+import { RxExternalLink } from "react-icons/rx"
 
 function Intro() {
   return (
@@ -54,18 +53,26 @@ function Intro() {
       <div className="flex items-center gap-4 md:gap-6">
         <Reveal>
           <LinkBtn href="#contact" className="resumeBtn">
-            <Text>Let&apos;s connect</Text>
+            <Text>Let&apos;s Connect</Text>
             <HiOutlineRocketLaunch className="size-6" />
           </LinkBtn>
         </Reveal>
 
         <Reveal>
-          <Button variant="outline">
+          <LinkBtn
+            href="./documents/resume.pdf"
+            target="_blank"
+            aria-label="My CV"
+            rel="noopener noreferrer"
+            variant="outline"
+          >
             <Text>My Resume</Text>
-            <DownloadIcon className="text-accent-500 size-7 group-hover:text-current" />
-          </Button>
+            <RxExternalLink className="text-accent-500 size-6 group-hover:text-current" />
+          </LinkBtn>
         </Reveal>
       </div>
+
+      <div></div>
     </Section>
   )
 }

@@ -28,6 +28,7 @@ function Project({ project }: ProjectProps) {
             className="rounded-md object-cover"
             alt={project.title}
             priority={false}
+            sizes="(min-width: 768px) 40vw, (min-width: 640px) 512px, 80vw"
           />
         </div>
         <div className="space-y-1 text-start">
@@ -43,6 +44,7 @@ function Project({ project }: ProjectProps) {
                     <Link
                       href={value}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="[&>svg]:hover:!fill-accent-500 hover:!text-accent-500 [&>svg]:size-full [&>svg]:!fill-white [&>svg]:transition-colors"
                     >
                       {LINK_ICONS[key]}
@@ -52,14 +54,16 @@ function Project({ project }: ProjectProps) {
               </ul>
             )}
           </div>
-          <Text>{project.description}</Text>
+          <Text className="text-stone-300 lg:leading-7">
+            {project.description}
+          </Text>
         </div>
         <div>
           <ul className="flex flex-wrap gap-2">
             {project.techs.map((tech, idx) => (
               <li
                 key={idx}
-                className="bg-primary-400/50 rounded-md px-2 py-1 md:px-3 md:py-2"
+                className="bg-primary-400/50 border-primary-400 rounded-md border px-2 py-1 select-none md:px-3 md:py-2"
               >
                 <Text size="h5">{tech}</Text>
               </li>

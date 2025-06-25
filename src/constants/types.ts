@@ -15,7 +15,6 @@ export type ProjectType = {
 
 export type ExperienceType = {
   companyName: string
-  companyLogo: StaticImageData
   employmentType: string
   jobTitle: string
   dateWorked: string

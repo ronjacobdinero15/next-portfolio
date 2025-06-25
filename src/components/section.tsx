@@ -8,7 +8,7 @@ function Section({ id, children, className }: SectionProps) {
   return (
     <section
       id={id}
-      className={`flex flex-col justify-center tracking-wide ${className} scroll-mt-16`}
+      className={`flex flex-col justify-center tracking-wide ${className}`}
     >
       {children}
     </section>

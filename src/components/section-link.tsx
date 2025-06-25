@@ -17,7 +17,7 @@ function SectionLink({ sectionName, even = false }: SectionLinkProps) {
         even && "flex-row-reverse"
       }`}
     >
-      <div className="after:text-accent-500 flex items-center font-bold tracking-wide text-nowrap capitalize transition-colors after:pb-3 after:text-5xl after:content-['.']">
+      <div className="after:text-accent-500 flex items-center font-bold tracking-wide text-nowrap capitalize transition-colors after:pb-2.5 after:text-5xl after:content-['.']">
         <Reveal width="w-full">
           <Text size="h1">{sectionName}</Text>
         </Reveal>
