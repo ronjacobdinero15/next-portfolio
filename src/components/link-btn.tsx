@@ -21,7 +21,7 @@ function LinkBtn({
   return (
     <Link
       href={`${href}`}
-      className={`focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-2 rounded-md px-6 text-sm font-medium !tracking-normal text-nowrap whitespace-nowrap shadow-xs transition-all outline-none select-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 ${variants[variant]} ${className}`}
+      className={`inline-flex h-10 shrink-0 cursor-pointer items-center justify-center gap-2 rounded-md px-6 text-sm font-medium !tracking-normal text-nowrap whitespace-nowrap shadow-xs transition-all select-none disabled:pointer-events-none disabled:opacity-50 has-[>svg]:px-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 ${variants[variant]} ${className}`}
       {...props}
     >
       {children}

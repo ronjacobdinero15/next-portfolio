@@ -6,16 +6,14 @@ import Text from "@/components/text"
 import {
   FaBootstrap,
   FaCss3Alt,
-  FaFacebookSquare,
   FaFigma,
   FaGitAlt,
   FaGithubAlt,
   FaHtml5,
   FaJava,
-  FaLinkedin,
   FaReact,
 } from "react-icons/fa"
-import { IoArrowRedoOutline, IoLogoJavascript } from "react-icons/io5"
+import { IoLogoJavascript } from "react-icons/io5"
 import { RiNextjsFill, RiSupabaseFill, RiTailwindCssFill } from "react-icons/ri"
 import {
   SiExpo,
@@ -95,7 +93,7 @@ const TECH_STACK = [
     icon: <SiVite />,
   },
   {
-    name: "Shadcn",
+    name: "ShadcnUI",
     icon: <SiShadcnui />,
   },
   {
@@ -145,11 +143,14 @@ const TECH_STACK = [
     name: "PHP",
     icon: <SiPhp />,
   },
+  {
+    name: "Framer Motion",
+  },
 ]
 
 function About() {
   return (
-    <Section id="about" className="scroll-mt-16 lg:h-dvh lg:scroll-mt-0">
+    <Section id="about" className="mb-40 scroll-mt-12 lg:h-dvh lg:scroll-mt-0">
       <SectionLink sectionName="About Me" />
 
       <div className="grid gap-5 text-pretty lg:grid-cols-2">
@@ -201,39 +202,6 @@ function About() {
               </div>
             </Reveal>
           </div>
-
-          <Reveal>
-            <div className="mt-5 flex items-center gap-3 [&_svg]:size-8">
-              <div className="text-accent-500 flex items-center gap-3">
-                <Text size="h3">My Links</Text>
-                <IoArrowRedoOutline />
-              </div>
-
-              <div className="[&>a:hover]:text-accent-500 flex items-center gap-3 [&>a]:transition-colors [&>svg]:text-stone-100">
-                <a
-                  href="https://www.facebook.com/ronjacobdinero15/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebookSquare />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/ronjacobdinero/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-                <a
-                  href="https://github.com/ronjacobdinero15"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithubAlt />
-                </a>
-              </div>
-            </div>
-          </Reveal>
         </div>
 
         <div>

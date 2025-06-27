@@ -7,8 +7,8 @@ const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "JVL Electronics",
     employmentType: "Freelance",
-    jobTitle: "Full Stack Developer | UI/UX Designer",
-    dateWorked: "May 2025 - July 2025",
+    jobTitle: "Full Stack Developer & UI/UX Designer",
+    dateWorked: "June 2025 - Aug 2025",
     workedLength: "3 mos",
     description:
       "Freelancing for JVL Electronics which is an e-commerce for Korean car parts.",
@@ -29,7 +29,7 @@ const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "ROC.PH Digital Marketing Services",
     employmentType: "Internship",
-    jobTitle: "Frontend Developer | UI/UX Designer",
+    jobTitle: "Frontend Developer & UI/UX Designer",
     dateWorked: "Jun 2024 - Jul 2024",
     workedLength: "2 mos",
     description:

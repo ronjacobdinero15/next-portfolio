@@ -25,7 +25,7 @@ function Experience({ exp }: ExperienceProps) {
 
         <Reveal>
           <Text className="text-stone-300">
-            {exp.dateWorked} · {exp.workedLength}
+            {exp.dateWorked} | {exp.workedLength}
           </Text>
         </Reveal>
 

@@ -11,7 +11,7 @@ function ViewMoreProjectsBtn({
   setToggleMoreProjects,
 }: ViewMoreProjectsBtnProps) {
   return (
-    <div className="mt-10 flex justify-center">
+    <div className="my-12 mb-20 flex justify-center">
       <button
         onClick={() => setToggleMoreProjects((tog) => !tog)}
         className="cursor-pointer"

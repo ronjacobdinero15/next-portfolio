@@ -2,13 +2,15 @@
 
 import NavLink from "@/components/nav-link"
 import { useOutsideClick } from "@/hooks/useOutsideClick"
-import { useState } from "react"
 
 const SECTIONS = ["ABOUT", "PROJECTS", "EXPERIENCE", "CONTACT"]
 
-function NavList() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+type NavListProps = {
+  isMenuOpen: boolean
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
 
+function NavList({ isMenuOpen, setIsMenuOpen }: NavListProps) {
   const handleToggleMenu = () => setIsMenuOpen((prev) => !prev)
   const ulRef = useOutsideClick<HTMLUListElement>(
     () => setIsMenuOpen(false),
