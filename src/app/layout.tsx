@@ -2,29 +2,13 @@ import Footer from "@/components/footer"
 import Header from "@/components/header"
 import Links from "@/components/links"
 import type { Metadata } from "next"
-import localFont from "next/font/local"
+import { Montserrat } from "next/font/google"
 import "./globals.css"
 import TabAttentionHandler from "@/components/tab-attention-handler"
 
-const spaceMono = localFont({
-  variable: "--font-space-mono",
-  src: [
-    {
-      path: "../../public/fonts/spacemono-italic.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/spacemono-regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../../public/fonts/spacemono-bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
 })
 
 export const metadata: Metadata = {
@@ -41,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <TabAttentionHandler originalTitle="Ron Jacob | Personal Portfolio">
         <body
-          className={`${spaceMono.variable} bg-primary-500 overflow-x-hidden text-stone-100 antialiased`}
+          className={`${montserrat.variable} bg-primary-500 overflow-x-hidden text-stone-100 antialiased`}
         >
           <Header />
           <main className="container">
