@@ -11,7 +11,7 @@ function Experience({ exp }: ExperienceProps) {
     <li className="py-5 tracking-wide text-pretty first:pt-0 last:pb-0 md:py-7">
       <div className="space-y-1.5">
         <Reveal>
-          <Text size="h2" className="text-accent-500 font-semibold">
+          <Text size="h2" className="text-accent-500 font-bold">
             {exp.jobTitle}
           </Text>
         </Reveal>

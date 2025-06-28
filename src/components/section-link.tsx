@@ -14,7 +14,7 @@ function SectionLink({ sectionName, even = false }: SectionLinkProps) {
   return (
     <div
       className={`group mb-3 flex items-center gap-2 ${
-        even && "flex-row-reverse"
+        even && "sm:flex-row-reverse"
       }`}
     >
       <div className="after:text-accent-500 flex items-center font-bold tracking-wide text-nowrap capitalize transition-colors after:pb-2.5 after:text-5xl after:content-['.']">
@@ -23,7 +23,7 @@ function SectionLink({ sectionName, even = false }: SectionLinkProps) {
         </Reveal>
       </div>
 
-      <Link href={`#${firstWord}`}>
+      <Link href={`#${firstWord}`} className="hidden sm:block">
         <HiLink className="text-primary-300 hover:text-accent-500 size-5 cursor-pointer transition-colors group-hover:visible sm:invisible" />
       </Link>
 

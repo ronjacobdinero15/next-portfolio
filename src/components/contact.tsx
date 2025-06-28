@@ -26,10 +26,10 @@ function Contact() {
             href="mailto:ronjacobdinero15@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-1 sm:gap-2"
+            className="group flex items-center justify-center gap-1.5"
             aria-label="My email"
           >
-            <HiEnvelope className="group-hover:fill-accent-500 size-8 transition-colors" />
+            <HiEnvelope className="group-hover:fill-accent-500 hidden size-7 transition-colors sm:block" />
             <span className="group-hover:text-accent-500 text-xl shadow-md transition-colors">
               ronjacobdinero15@gmail.com
             </span>

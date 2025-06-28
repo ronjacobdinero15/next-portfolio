@@ -8,7 +8,7 @@ import { RxExternalLink } from "react-icons/rx"
 
 function Intro() {
   return (
-    <Section className="h-dvh gap-y-1 md:items-center">
+    <Section className="h-dvh gap-y-1 pt-5 md:items-center">
       <Reveal>
         <Text size="h3" className="gradient-highlight font-semibold">
           Hello World! I Am
@@ -50,21 +50,22 @@ function Intro() {
         </Text>
       </Reveal>
 
-      <div className="flex items-center gap-4 md:gap-6">
-        <Reveal>
-          <LinkBtn href="#contact" className="resumeBtn">
+      <div className="flex flex-col items-center gap-4 sm:flex-row md:w-2/4 md:gap-6">
+        <Reveal width="w-full">
+          <LinkBtn href="#contact" className="resumeBtn w-full">
             <Text>Let&apos;s Connect</Text>
             <HiOutlineRocketLaunch className="size-6" />
           </LinkBtn>
         </Reveal>
 
-        <Reveal>
+        <Reveal width="w-full">
           <LinkBtn
             href="./documents/resume.pdf"
             target="_blank"
             aria-label="My CV"
             rel="noopener noreferrer"
             variant="outline"
+            className="flex w-full items-center"
           >
             <Text>My Resume</Text>
             <RxExternalLink className="text-accent-500 size-6 group-hover:text-current" />
