@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary-100: #d0d0d1;
-  --color-primary-200: #a1a1a3;
-  --color-primary-300: #737274;
-  --color-primary-400: #2c2c2f;
-  --color-primary-500: #151418;
-  --color-primary-600: #111013;
-  --color-primary-700: #0d0c0e;
-  --color-primary-800: #08080a;
-  --color-primary-900: #040405;
+  --color-primary-100: #cfcfcf;
+  --color-primary-200: #a0a0a0;
+  --color-primary-300: #707070;
+  --color-primary-400: #414141;
+  --color-primary-500: #111111;
+  --color-primary-600: #0e0e0e;
+  --color-primary-700: #0a0a0a;
+  --color-primary-800: #070707;
+  --color-primary-900: #030303;
 
   --color-border: #484848;
 
@@ -97,6 +97,19 @@ img {
   border-radius: 4px;
 }
 
+/* SELECTION */
+::selection {
+  background: var(--color-accent-600);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+::-moz-selection {
+  background: var(--color-accent-600);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
 /* HAMBURGER MENU ANIMATION */
 .menu {
   cursor: pointer;
@@ -159,10 +172,94 @@ img {
   top: -50%;
   bottom: -50%;
   width: 1.25em;
-  transform: translate3d(-525%, 0, 0) rotate(35deg);
 }
 
 .resumeBtn:hover::after {
   transition: transform 0.45s ease-in-out;
-  transform: translate3d(560%, 0, 0) rotate(35deg);
+}
+
+/* BEFORE SM BREAKPOINT */
+@media only screen and (max-width: 639px) {
+  .resumeBtn::after {
+    transform: translate3d(-1500%, 0, 0) rotate(35deg);
+  }
+  .resumeBtn:hover::after {
+    transform: translate3d(1500%, 0, 0) rotate(35deg);
+  }
+}
+
+/* SM BREAKPOINT */
+@media only screen and (min-width: 640px) {
+  .resumeBtn::after {
+    transform: translate3d(-850%, 0, 0) rotate(35deg);
+  }
+  .resumeBtn:hover::after {
+    transform: translate3d(850%, 0, 0) rotate(35deg);
+  }
+}
+
+/* TRY */
+/* From Uiverse.io by kennyotsu */
+.loader {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  animation: spin_4991 4.3s infinite;
+}
+
+/* Keyframes for 4 spans (3 unique + 1 duplicate) - only go to -300% */
+@keyframes spin_4991 {
+  12.5% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  37.5% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  62.5% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
 }

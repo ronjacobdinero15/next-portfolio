@@ -12,7 +12,7 @@ function NavLink({ sectionName, handleToggleMenu }: NavLinkProps) {
     <li className={`flex h-8 items-center rounded-lg`}>
       <Reveal>
         <Link
-          className={`hover:text-accent-500 w-full tracking-wide transition-colors ease-in-out focus:ring-0`}
+          className={`hover:text-accent-500 w-full tracking-wide transition-colors duration-100 ease-in-out focus:ring-0`}
           href={`#${sectionName.toLowerCase()}`}
           onClick={handleToggleMenu}
         >

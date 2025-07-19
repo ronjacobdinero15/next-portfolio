@@ -16,7 +16,7 @@ function Contact() {
         </Reveal>
 
         <Reveal>
-          <p className="after:text-accent-500 mb-2 flex items-center text-5xl font-bold text-nowrap after:text-5xl after:content-['.'] sm:text-6xl sm:after:text-6xl lg:text-8xl lg:after:text-8xl">
+          <p className="after:text-accent-500 mb-2 text-6xl font-bold text-nowrap after:text-6xl after:content-['.'] sm:text-7xl sm:after:text-7xl lg:text-8xl lg:after:text-8xl">
             Contact Me
           </p>
         </Reveal>
@@ -29,8 +29,8 @@ function Contact() {
             className="group flex items-center justify-center gap-1.5"
             aria-label="My email"
           >
-            <HiEnvelope className="group-hover:fill-accent-500 hidden size-7 transition-colors sm:block" />
-            <span className="group-hover:text-accent-500 text-xl shadow-md transition-colors">
+            <HiEnvelope className="group-hover:fill-accent-500 hidden size-7 transition-colors duration-100 sm:block" />
+            <span className="group-hover:text-accent-500 text-xl shadow-md transition-colors duration-100">
               ronjacobdinero15@gmail.com
             </span>
           </Link>
@@ -38,7 +38,7 @@ function Contact() {
 
         <Image
           src={circlePattern}
-          className="absolute top-1/2 left-1/2 -z-10 aspect-square max-w-[270px] -translate-x-1/2 -translate-y-1/2 opacity-75 sm:max-w-[320px] lg:max-w-[400px]"
+          className="absolute top-1/2 left-1/2 -z-10 aspect-square max-w-[270px] -translate-x-1/2 -translate-y-1/2 opacity-75 select-none sm:max-w-[320px] lg:max-w-[400px]"
           alt=""
         />
       </div>

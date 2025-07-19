@@ -25,27 +25,30 @@ function Project({ project }: ProjectProps) {
           <Image
             fill
             src={project.src}
-            className="rounded-md object-cover"
+            className="rounded-md object-cover select-none"
             alt={project.title}
             priority={false}
             sizes="(min-width: 768px) 40vw, (min-width: 640px) 512px, 80vw"
           />
         </div>
         <div className="space-y-1 text-start">
-          <div className="flex items-center justify-between">
-            <Text size="h3" className="font-semibold">
+          <div className="group flex items-center justify-between">
+            <Text
+              size="h3"
+              className="group-hover:text-accent-500 font-semibold transition-colors duration-100"
+            >
               {project.title}
             </Text>
 
             {project?.links && (
-              <ul className="flex items-center gap-2">
+              <ul className="group flex items-center gap-2">
                 {Object.entries(project.links).map(([key, value], idx) => (
                   <li key={idx} className="size-6">
                     <Link
                       href={value}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="[&>svg]:hover:!fill-accent-500 hover:!text-accent-500 [&>svg]:size-full [&>svg]:!fill-white [&>svg]:transition-colors"
+                      className="[&>svg]:hover:!fill-accent-500 hover:!text-accent-500 [&>svg]:size-full [&>svg]:!fill-white [&>svg]:transition-colors [&>svg]:duration-100"
                     >
                       {LINK_ICONS[key]}
                     </Link>

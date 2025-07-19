@@ -1,6 +1,5 @@
 "use client"
-
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 
 export default function TabAttentionHandler({
   children,
@@ -9,21 +8,36 @@ export default function TabAttentionHandler({
   children: React.ReactNode
   originalTitle: string
 }) {
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+
   useEffect(() => {
     const handleVisibilityChange = () => {
+      // Clear any existing timeout
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+        timeoutRef.current = null
+      }
+
       if (document.hidden) {
-        document.title = "I miss you💞!"
+        // User left the tab
+        document.title = "Let’s connect! 🤝"
       } else {
+        // User returned to the tab
         document.title = "You're back! 😊"
-        setTimeout(() => {
+        timeoutRef.current = setTimeout(() => {
           document.title = originalTitle
         }, 1000)
       }
     }
 
     document.addEventListener("visibilitychange", handleVisibilityChange)
+
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange)
+      // Clean up timeout on unmount
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current)
+      }
     }
   }, [originalTitle])
 

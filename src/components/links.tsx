@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaGithubAlt, FaLinkedin } from "react-icons/fa"
 
 function Links() {
   return (
-    <div className="[&_a:hover]:text-accent-500 fixed right-10 bottom-0 hidden flex-col items-center gap-2 lg:flex [&_a]:transition-colors [&_svg]:size-7 [&_svg]:text-stone-100">
+    <div className="[&_svg:hover]:text-accent-500 fixed right-10 bottom-0 hidden flex-col items-center gap-2 lg:flex [&_svg]:size-7 [&_svg]:text-stone-100 [&_svg]:transition-colors [&_svg]:duration-100">
       <Reveal>
         <Link
           href="https://www.linkedin.com/in/ronjacobdinero/"

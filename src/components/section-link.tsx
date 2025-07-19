@@ -24,7 +24,7 @@ function SectionLink({ sectionName, even = false }: SectionLinkProps) {
       </div>
 
       <Link href={`#${firstWord}`} className="hidden sm:block">
-        <HiLink className="text-primary-300 hover:text-accent-500 size-5 cursor-pointer transition-colors group-hover:visible sm:invisible" />
+        <HiLink className="text-primary-300 hover:text-accent-500 size-5 cursor-pointer transition-colors duration-100 group-hover:visible sm:invisible" />
       </Link>
 
       <div className="bg-accent-500 h-[1px] w-full rounded-full" />
