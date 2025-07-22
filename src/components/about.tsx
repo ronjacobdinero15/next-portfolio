@@ -41,12 +41,12 @@ const TECH_STACK = [
     icon: <SiTypescript />,
   },
   {
-    name: "React",
+    name: "React.js",
     icon: <FaReact />,
   },
   {
-    name: "Prisma",
-    icon: <SiPrisma />,
+    name: "React Native (Expo)",
+    icon: <SiExpo />,
   },
   {
     name: "Supabase",
@@ -57,20 +57,22 @@ const TECH_STACK = [
     icon: <SiMysql />,
   },
   {
-    name: "phpMyAdmin",
-    icon: <SiPhpmyadmin />,
-  },
-
-  {
     name: "Zustand",
   },
   {
-    name: "Redux/RTK",
-    icon: <SiRedux />,
+    name: "Auth.js",
+  },
+  {
+    name: "Prisma",
+    icon: <SiPrisma />,
   },
   {
     name: "Tailwind",
     icon: <RiTailwindCssFill />,
+  },
+  {
+    name: "Redux/RTK",
+    icon: <SiRedux />,
   },
   {
     name: "React Query",
@@ -81,24 +83,16 @@ const TECH_STACK = [
     icon: <SiReacthookform />,
   },
   {
-    name: "React Native",
-    icon: <FaReact />,
+    name: "PHP",
+    icon: <SiPhp />,
   },
   {
-    name: "Expo",
-    icon: <SiExpo />,
+    name: "phpMyAdmin",
+    icon: <SiPhpmyadmin />,
   },
   {
-    name: "Vite",
-    icon: <SiVite />,
-  },
-  {
-    name: "ShadcnUI",
-    icon: <SiShadcnui />,
-  },
-  {
-    name: "styled-components",
-    icon: <SiStyledcomponents />,
+    name: "Figma",
+    icon: <FaFigma />,
   },
   {
     name: "Git",
@@ -109,8 +103,19 @@ const TECH_STACK = [
     icon: <FaGithubAlt />,
   },
   {
-    name: "Figma",
-    icon: <FaFigma />,
+    name: "Vite",
+    icon: <SiVite />,
+  },
+  {
+    name: "ShadcnUI",
+    icon: <SiShadcnui />,
+  },
+  {
+    name: "Framer Motion",
+  },
+  {
+    name: "styled-components",
+    icon: <SiStyledcomponents />,
   },
   {
     name: "React Router",
@@ -124,27 +129,17 @@ const TECH_STACK = [
     name: "CSS",
     icon: <FaCss3Alt />,
   },
-
   {
     name: "JavaScript",
     icon: <IoLogoJavascript />,
   },
-
   {
     name: "Java",
     icon: <FaJava />,
   },
-
   {
     name: "Bootstrap",
     icon: <FaBootstrap />,
-  },
-  {
-    name: "PHP",
-    icon: <SiPhp />,
-  },
-  {
-    name: "Framer Motion",
   },
 ]
 

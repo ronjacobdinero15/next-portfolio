@@ -18,8 +18,8 @@ function Intro() {
 
       <div className="flex flex-col items-center">
         <Reveal>
-          <p className="after:text-accent-500 mb-2 text-center text-5xl font-bold after:text-5xl after:content-['.'] sm:text-6xl sm:after:text-6xl lg:text-7xl lg:after:text-7xl">
-            Ron Jacob Dinero
+          <p className="after:text-accent-500 mb-2 text-center text-5xl font-bold after:text-5xl sm:text-6xl sm:after:text-6xl sm:after:content-['.'] lg:text-7xl lg:after:text-7xl">
+            Ron Jacob<span className="hidden sm:inline"> Dinero</span>
           </p>
         </Reveal>
 
@@ -55,7 +55,7 @@ function Intro() {
       </Reveal>
 
       <Reveal>
-        <TextExpander className="my-3 max-w-3xl text-justify leading-7 text-stone-200 sm:text-center">
+        <TextExpander className="my-3 max-w-3xl text-justify text-stone-200 sm:text-center sm:leading-7">
           Hi, I&apos;m Ron &ndash; a passionate Next.js developer and recent
           Computer Science graduate from EAC-Cavite, Philippines. As a
           self-taught developer, I&apos;ve cultivated a deep love for web
@@ -64,8 +64,7 @@ function Intro() {
           problems into elegant solutions and take pride in crafting seamless
           user experiences. Every day brings new learning opportunities, and
           I&apos;m constantly evolving my skills to stay at the forefront of web
-          development. When I&apos;m not coding, you&apos;ll find me exploring
-          the latest tech trends and experimenting with new technologies.
+          development.
         </TextExpander>
       </Reveal>
 
@@ -77,7 +76,7 @@ function Intro() {
           </LinkBtn>
         </Reveal>
 
-        <Reveal width="w-full">
+        <Reveal width="w-full hidden sm:block">
           <LinkBtn
             href="./documents/resume.pdf"
             target="_blank"

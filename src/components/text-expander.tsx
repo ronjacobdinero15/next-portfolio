@@ -14,7 +14,7 @@ function TextExpander({ children, className }: TextExpanderProps) {
 
   const displayText = isExpanded
     ? children
-    : children.split(" ").slice(0, 30).join(" ") + "..."
+    : children.split(" ").slice(0, 16).join(" ") + "..."
 
   return (
     <Text className={className}>

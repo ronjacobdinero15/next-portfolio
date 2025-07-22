@@ -1,9 +1,9 @@
+import circlePattern from "@/assets/images/miscellaneous/circle_pattern.png"
 import Reveal from "@/components/reveal"
 import Section from "@/components/section"
-import circlePattern from "@/assets/images/miscellaneous/circle_pattern.png"
 import Image from "next/image"
 import Link from "next/link"
-import { HiEnvelope } from "react-icons/hi2"
+import { IoSend } from "react-icons/io5"
 
 function Contact() {
   return (
@@ -16,7 +16,7 @@ function Contact() {
         </Reveal>
 
         <Reveal>
-          <p className="after:text-accent-500 mb-2 text-6xl font-bold text-nowrap after:text-6xl after:content-['.'] sm:text-7xl sm:after:text-7xl lg:text-8xl lg:after:text-8xl">
+          <p className="after:text-accent-500 mb-2 text-5xl font-bold text-nowrap after:text-5xl after:content-['.'] sm:text-7xl sm:after:text-7xl lg:text-8xl lg:after:text-8xl">
             Contact Me
           </p>
         </Reveal>
@@ -29,8 +29,8 @@ function Contact() {
             className="group flex items-center justify-center gap-1.5"
             aria-label="My email"
           >
-            <HiEnvelope className="group-hover:fill-accent-500 hidden size-7 transition-colors duration-100 sm:block" />
-            <span className="group-hover:text-accent-500 text-xl shadow-md transition-colors duration-100">
+            <IoSend className="group-hover:fill-accent-500 hidden size-7 transition-colors duration-100 sm:block" />
+            <span className="group-hover:text-accent-500 text-xl font-medium shadow-md transition-colors duration-100">
               ronjacobdinero15@gmail.com
             </span>
           </Link>
