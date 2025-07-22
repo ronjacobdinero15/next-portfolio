@@ -1,10 +1,8 @@
-import Footer from "@/components/footer"
-import Header from "@/components/header"
-import Links from "@/components/links"
+import TabAttentionHandler from "@/components/tab-attention-handler"
 import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
-import TabAttentionHandler from "@/components/tab-attention-handler"
+import BackgroundAnimations from "@/components/background-animations"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,18 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <TabAttentionHandler originalTitle="Ron Jacob | Personal Portfolio">
-        <body
-          className={`${montserrat.variable} bg-primary-500 overflow-x-hidden text-stone-100 antialiased`}
-        >
-          <Header />
-          <main className="container">
-            <div>{children}</div>
-            <Links />
-          </main>
-          <Footer />
-        </body>
-      </TabAttentionHandler>
+      <body
+        className={`${montserrat.variable} bg-primary-500 relative overflow-x-hidden text-stone-100 antialiased`}
+      >
+        <TabAttentionHandler originalTitle="Ron Jacob | Personal Portfolio">
+          {children}
+        </TabAttentionHandler>
+
+        <BackgroundAnimations />
+      </body>
     </html>
   )
 }
