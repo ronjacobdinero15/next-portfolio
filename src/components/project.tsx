@@ -32,7 +32,7 @@ function Project({ project }: ProjectProps) {
           />
         </div>
         <div className="space-y-1 text-start">
-          <div className="group flex items-center justify-between">
+          <div className="group flex justify-between">
             <Text
               size="h3"
               className="group-hover:text-accent-500 font-semibold transition-colors duration-100"
@@ -41,7 +41,7 @@ function Project({ project }: ProjectProps) {
             </Text>
 
             {project?.links && (
-              <ul className="group flex items-center gap-2">
+              <ul className="group flex gap-2 pt-1">
                 {Object.entries(project.links).map(([key, value], idx) => (
                   <li key={idx} className="size-6">
                     <Link

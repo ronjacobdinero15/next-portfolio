@@ -11,7 +11,7 @@ const EXPERIENCES: ExperienceType[] = [
     dateWorked: "June 2025 - Aug 2025",
     workedLength: "3 mos",
     description:
-      "Freelancing for JVL Electronics which is an e-commerce for Korean car parts.",
+      "Freelance project for an e-commerce website selling Korean car parts.",
     skillsUsed: [
       "Next.js",
       "React.js",
@@ -20,6 +20,10 @@ const EXPERIENCES: ExperienceType[] = [
       "TypeScript",
       "Tailwind",
       "Figma",
+      "Zustand",
+      "React Query",
+      "Auth.js",
+      "React Hook Form",
       "HTML",
       "CSS",
       "Git",

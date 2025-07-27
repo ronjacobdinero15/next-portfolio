@@ -17,9 +17,7 @@ import rocPreview from "@/assets/images/projects/7p-roc.png"
 import posJavaScriptPreview from "@/assets/images/projects/8p-pos_javascript.png"
 import pmsJavaPreview from "@/assets/images/projects/9p-pms_java.png"
 import posJavaPreview from "@/assets/images/projects/10p-pos_java.png"
-import basicCalculatorPreview from "@/assets/images/projects/11p-basic-calculator.png"
-import etchASketchPreview from "@/assets/images/projects/12p-etch-a-sketch.png"
-
+import etchASketchPreview from "@/assets/images/projects/11p-etch-a-sketch.png"
 import worldwisePreview from "@/assets/images/projects/1u-worldwise.png"
 import fastReactPizzaPreview from "@/assets/images/projects/2u-fast_react_pizza.png"
 import reactQuizPreview from "@/assets/images/projects/3u-react_quiz.png"
@@ -34,14 +32,13 @@ const SectionLink = dynamic(() => import("@/components/section-link"))
 
 const PROJECT_LIST: ProjectType[] = [
   {
-    title: "Personal Portfolio",
+    title: "My Portfolio - Next.js",
     links: {
       repoLink: "https://github.com/ronjacobdinero15/next-portfolio",
       liveLink: "https://ronjacobdinero.netlify.app/",
     },
     src: personalPortfolioPreview,
-    description:
-      "My personal web developer portfolio that is currently this website.",
+    description: "My portfolio which is this website.",
     techs: [
       "Next.js",
       "React.js",
@@ -53,12 +50,13 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "Next.js - JVL Electronics",
+    title: "JVL Electronics - Next.js",
     links: {
       liveLink: "https://jvl-electronics.netlify.app/",
     },
     src: jvlPreview,
-    description: "Freelance project - korean car parts ecommerce.",
+    description:
+      "Freelance project - Korean car parts ecommerce w/ Figma designs.",
     techs: [
       "Next.js",
       "React.js",
@@ -76,14 +74,14 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "PulseAI - Mobile App",
+    title: "PulseAI - Mobile App - React Native (Expo)",
     links: {
       videoLink:
         "https://drive.google.com/file/d/16PPAUTQGHx0yfM1y_PNMQUU4CKsoLvd0/view?usp=sharing",
     },
     src: pulseAiPreview,
     description:
-      "Blood pressure logger with AI analysis and generates patient PDF summary report containing all information about their hypertension.",
+      "Blood pressure logger with AI analysis and generates patient PDF summary report containing all information about their hypertension status.",
     techs: [
       "React Native",
       "Expo (Framework)",
@@ -100,13 +98,13 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "PulseAI - Web Admin",
+    title: "PulseAI - Web Admin - Next.js",
     links: {
       videoLink:
         "https://drive.google.com/file/d/16PPAUTQGHx0yfM1y_PNMQUU4CKsoLvd0/view?usp=sharing",
     },
     src: pulseAiWebPreview,
-    description: "Account management app.",
+    description: "IT/Doctor account management app.",
     techs: [
       "Next.js",
       "React.js",
@@ -121,13 +119,13 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "React + PHP CRUD App",
+    title: "React + PHP | CRUD App",
     links: {
       repoLink: "https://github.com/ronjacobdinero15/se_activity",
     },
     src: reactPhpCrudAppWebPreview,
     description:
-      "Basic fake 7-11 franchise inventory management system using React.js + PHP for authentication and CRUD operations. College assignment.",
+      "Fake 7-11 franchise inventory management system using React.js + PHP for authentication and CRUD operations. College assignment.",
     techs: [
       "React.js",
       "PHP",
@@ -143,19 +141,19 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "Figma",
+    title: "Walk-in Style - Figma",
     src: walkInStylePreview,
-    description: "College project w/ a class partner.",
+    description: "College UI/UX project w/ a class partner.",
     techs: ["Figma"],
   },
   {
-    title: "Vite - Comfy Store",
+    title: "Comfy Store - Vite",
     links: {
       repoLink: "https://github.com/ronjacobdinero15/comfy-store",
       liveLink: "https://ronjacobdinero15.github.io/comfy-store/",
     },
     src: comfyStorePreview,
-    description: "Clothing e-commerce store.",
+    description: "Clothing e-commerce store using Fake Store API.",
     techs: [
       "Vite",
       "React.js",
@@ -167,13 +165,13 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "Fast React Pizza",
+    title: "Fast React Pizza Store - Vite",
     links: {
       repoLink: "https://github.com/ronjacobdinero15/fast-react-pizza",
       liveLink: "https://ronjacobdinero15.github.io/fast-react-pizza/",
     },
     src: fastReactPizzaPreview,
-    description: "React pizza store.",
+    description: "Pizza store with Redux/RTK.",
     techs: [
       "Vite",
       "React.js",
@@ -205,7 +203,7 @@ const PROJECT_LIST: ProjectType[] = [
     techs: ["JavaScript", "HTML", "CSS", "Bootstrap", "Git", "GitHub"],
   },
   {
-    title: "Payroll Management System (POS) - Java",
+    title: "Payroll Management System (PMS) - Java",
     links: {
       repoLink:
         "https://github.com/ronjacobdinero15/payroll-management-system-java",
@@ -215,84 +213,68 @@ const PROJECT_LIST: ProjectType[] = [
     techs: [
       "Java",
       "Nimbus Look and Feel",
-      "Notepad as database (my professor strictly instructed)",
+      "Notepad as database (my college prof strictly instructed)",
     ],
   },
   {
-    title: "React Quiz",
-    links: {
-      repoLink: "https://github.com/ronjacobdinero15/react-quiz",
-      liveLink: "https://react-quiz-ronjacobdinero15.vercel.app/",
-    },
-    src: reactQuizPreview,
-    description: "React Quiz App.",
-    techs: [
-      "React.js",
-      "Context API + useReducer",
-      "Jest",
-      "CSS",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
-    title: "usePopcorn",
-    links: {
-      repoLink: "https://github.com/ronjacobdinero15/usePopcorn",
-      liveLink: "https://ronjacobdinero15.github.io/usePopcorn/",
-    },
-    src: usePopcornPreview,
-    description:
-      "Simple movie app I learned from Udemy. I learned how to use hooks and fundamentals of React.js.",
-    techs: [
-      "React.js",
-      "Context API + useReducer",
-      "Jest",
-      "CSS",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
-    title: "WorldWise",
+    title: "WorldWise - Vite",
     links: {
       repoLink: "https://github.com/ronjacobdinero15/worldwise",
       liveLink: "https://worldwise-ronjacobdinero.vercel.app/",
     },
     src: worldwisePreview,
-    description: "Note taking app.",
+    description: "Landmark note taking app.",
     techs: [
       "Vite",
       "React.js",
       "Context API + useReducer",
       "Jest",
       "CSS",
-      "Leaflet",
+      "Leaflet.js",
       "React Router",
       "Git",
       "GitHub",
     ],
   },
   {
-    title: "ROC",
+    title: "React Quiz - CRA",
     links: {
-      repoLink: "https://github.com/ronjacobdinero15/roc_google_calendar",
-      liveLink: "https://ronjacobdinero15.github.io/roc_google_calendar/",
+      repoLink: "https://github.com/ronjacobdinero15/react-quiz",
+      liveLink: "https://react-quiz-ronjacobdinero15.vercel.app/",
     },
-    src: rocPreview,
-    description:
-      "Google calendar scheduling appointment (Please do not submit).",
-    techs: ["HTML", "CSS", "Figma", "Google Calendar API", "Git", "GitHub"],
+    src: reactQuizPreview,
+    description: "React quiz app.",
+    techs: [
+      "React.js",
+      "Context API + useReducer",
+      "Jest",
+      "CSS",
+      "Git",
+      "GitHub",
+    ],
   },
   {
-    title: "Simple Calculator",
+    title: "usePopcorn - CRA",
     links: {
-      repoLink: "https://github.com/ronjacobdinero15/simple-calculator-js",
-      liveLink: "https://ronjacobdinero15.github.io/simple-calculator-js/",
+      repoLink: "https://github.com/ronjacobdinero15/usePopcorn",
+      liveLink: "https://ronjacobdinero15.github.io/usePopcorn/",
     },
-    src: basicCalculatorPreview,
-    description: "Simple calculator.",
-    techs: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
+    src: usePopcornPreview,
+    description: "Simple movie app I learned from Udemy.",
+    techs: [
+      "React.js",
+      "Context API + useReducer",
+      "Jest",
+      "CSS",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    title: "Appointment Scheduler (Google Calendar API) - ROC - HTML/CSS/JS",
+    src: rocPreview,
+    description: "Google calendar scheduling appointment.",
+    techs: ["HTML", "CSS", "Figma", "Google Calendar API", "Git", "GitHub"],
   },
   {
     title: "Etch-a-Sketch",
@@ -301,7 +283,7 @@ const PROJECT_LIST: ProjectType[] = [
       liveLink: "https://ronjacobdinero15.github.io/etch-a-sketch/",
     },
     src: etchASketchPreview,
-    description: "Random tutorial & challenge online (1).",
+    description: "Sketch using your mouse.",
     techs: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
   },
 ]
