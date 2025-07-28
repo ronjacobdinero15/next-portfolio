@@ -213,7 +213,7 @@ const PROJECT_LIST: ProjectType[] = [
     techs: [
       "Java",
       "Nimbus Look and Feel",
-      "Notepad as database (my college prof strictly instructed)",
+      "Notepad as database (my college prof strictly instructed🙄)",
     ],
   },
   {
