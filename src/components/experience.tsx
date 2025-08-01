@@ -10,11 +10,19 @@ function Experience({ exp }: ExperienceProps) {
   return (
     <li className="py-5 tracking-wide text-pretty first:pt-0 last:pb-0 md:py-7">
       <div className="space-y-1.5">
-        <Reveal>
-          <Text size="h2" className="text-accent-500 font-bold">
-            {exp.jobTitle}
-          </Text>
-        </Reveal>
+        <div className="flex items-center justify-between">
+          <Reveal>
+            <Text size="h2" className="text-accent-500 font-bold">
+              {exp.jobTitle}
+            </Text>
+          </Reveal>
+
+          <Reveal className="hidden lg:block">
+            <Text size="h3">
+              {exp.dateWorked} | {exp.workedLength}
+            </Text>
+          </Reveal>
+        </div>
 
         <Reveal>
           <Text size="h3">
@@ -23,28 +31,35 @@ function Experience({ exp }: ExperienceProps) {
           </Text>
         </Reveal>
 
-        <Reveal>
-          <Text className="text-stone-300">
+        <Reveal className="lg:hidden">
+          <Text>
             {exp.dateWorked} | {exp.workedLength}
           </Text>
         </Reveal>
 
-        <Reveal>
-          <Text className="text-stone-300 lg:leading-7">{exp.description}</Text>
-        </Reveal>
-
-        <Reveal>
-          <ul className="5 mt-2 flex flex-wrap gap-2">
-            {exp.skillsUsed.map((skill: string) => (
-              <li
-                key={skill}
-                className="bg-primary-400/50 border-primary-400 rounded-md border px-2 py-1 select-none md:px-3 md:py-2"
-              >
-                <Text>{skill}</Text>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
+        <div className="space-y-1.5 md:pl-5">
+          <Reveal>
+            <ul className="list-disc space-y-0.5 text-stone-300 lg:leading-7">
+              {exp.description.map((desc, idx) => (
+                <li key={idx} className="ml-4">
+                  {desc}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <Reveal>
+            <ul className="5 mt-2 flex flex-wrap gap-2">
+              {exp.skillsUsed.map((skill: string) => (
+                <li
+                  key={skill}
+                  className="bg-primary-400/50 border-primary-400 rounded-md border px-2 py-1 select-none md:px-2.5 md:py-1.5"
+                >
+                  <Text size="h5">{skill}</Text>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        </div>
       </div>
     </li>
   )

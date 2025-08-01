@@ -7,13 +7,18 @@ const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "JVL Electronics",
     employmentType: "Freelance",
-    jobTitle: "Full Stack Developer & UI/UX Designer",
-    dateWorked: "June 2025 - Aug 2025",
-    workedLength: "3 mos",
-    description:
-      "Freelance project for an e-commerce website selling Korean car parts.",
+    jobTitle: "Full Stack Developer",
+    dateWorked: "May 2025 - Aug 2025",
+    workedLength: "4 mos",
+    description: [
+      "Designed modern and intuitive user interfaces and wireframes using Figma.",
+      "Built using Next.js for the customer storefront to optimize SEO performance and initial page load speeds, while implemented Vite for the admin dashboard for better user experience.",
+      "Integrated Medusa.js headless commerce platform for the admin panel for faster development.",
+    ],
     skillsUsed: [
       "Next.js",
+      "Vite",
+      "Medusa.js",
       "React.js",
       "Supabase",
       "Prisma",
@@ -33,11 +38,14 @@ const EXPERIENCES: ExperienceType[] = [
   {
     companyName: "ROC.PH Digital Marketing Services",
     employmentType: "Internship",
-    jobTitle: "Frontend Developer & UI/UX Designer",
-    dateWorked: "Jun 2024 - Jul 2024",
-    workedLength: "2 mos",
-    description:
-      "Spent my college academic internship mostly working on web designs using Figma, and working on the company side-project to build an appointment web application system and integrate appointments to google calendar for both the client and our company CEO to google calendar for scheduled and notified events.",
+    jobTitle: "Frontend Developer | UI/UX Designer",
+    dateWorked: "Jun 2024 - Sep 2024",
+    workedLength: "4 mos",
+    description: [
+      "Redesigned and implemented user interfaces for the company's internal systems.",
+      "Conducted user research to identify clients needs and preferences and translated into design solutions.",
+      "Developed the company's appointment web application system using Google Calendar API to automate event scheduling between the clients and the CEO.",
+    ],
     skillsUsed: [
       "Figma",
       "HTML",

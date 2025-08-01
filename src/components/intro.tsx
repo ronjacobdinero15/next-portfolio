@@ -27,7 +27,7 @@ function Intro() {
           <div className="loader h-14 sm:h-16 lg:h-20">
             <div className="words">
               <span className="word gradient-highlight flex items-center text-center text-5xl font-bold sm:text-6xl lg:text-7xl">
-                <span>Full-Stack</span>
+                <span>Full Stack</span>
                 {}
                 <span className="hidden md:inline"> Developer</span>
               </span>
@@ -36,10 +36,10 @@ function Intro() {
                 <span className="hidden md:inline"> Designer</span>
               </span>
               <span className="word gradient-highlight text-center text-5xl font-bold sm:text-6xl lg:text-7xl">
-                Freelancer
+                Frontend Developer
               </span>
               <span className="word gradient-highlight flex items-center text-center text-5xl font-bold sm:text-6xl lg:text-7xl">
-                <span>Full-Stack</span>
+                <span>Full Stack</span>
                 <span className="hidden md:inline"> Developer</span>
               </span>
             </div>

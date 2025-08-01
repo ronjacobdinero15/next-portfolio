@@ -1,5 +1,11 @@
 type SectionProps = {
-  id?: "intro" | "about" | "projects" | "experience" | "contact"
+  id?:
+    | "intro"
+    | "about"
+    | "projects"
+    | "experience"
+    | "certifications"
+    | "contact"
   children: React.ReactNode
   className?: string
 }

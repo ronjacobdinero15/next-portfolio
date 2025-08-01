@@ -31,7 +31,7 @@ function Contact() {
           >
             <IoSend className="group-hover:fill-accent-500 hidden size-7 transition-colors duration-100 sm:block" />
             <span className="group-hover:text-accent-500 text-xl font-medium shadow-md transition-colors duration-100">
-              ronjacobdinero15@gmail.com
+              ronjacobworks@gmail.com
             </span>
           </Link>
         </Reveal>

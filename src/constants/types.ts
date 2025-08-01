@@ -18,6 +18,6 @@ export type ExperienceType = {
   jobTitle: string
   dateWorked: string
   workedLength: string
-  description: string
+  description: string[]
   skillsUsed: string[]
 }
