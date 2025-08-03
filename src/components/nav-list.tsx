@@ -34,7 +34,7 @@ function NavList({ isMenuOpen, setIsMenuOpen }: NavListProps) {
         ref={ulRef}
         className={`bg-primary-500/90 right-1 z-50 w-36 items-center space-y-2 pl-3 transition-all duration-100 md:flex md:w-auto md:space-y-0 md:gap-x-8 md:bg-transparent md:pl-0 ${
           isMenuOpen
-            ? "border-primary-300/95 absolute top-10 w-32 rounded-lg border-[1px] py-2 md:static md:w-auto md:space-y-0 md:border-none"
+            ? "border-primary-300/95 absolute top-10 w-32 rounded-md border-[1px] py-2 md:static md:w-auto md:space-y-0 md:border-none"
             : "hidden"
         }`}
       >

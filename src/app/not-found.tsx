@@ -32,7 +32,7 @@ export default function NotFound() {
         <div className="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row">
           <Link
             href="/"
-            className="btn-outline group hover:text-accent-500 inline-flex items-center gap-2 rounded-lg px-6 py-3 font-semibold transition-colors duration-100"
+            className="btn-outline group hover:text-accent-500 inline-flex items-center gap-2 rounded-md px-6 py-3 font-semibold transition-colors duration-100"
           >
             <HiOutlineHome className="size-5" />
             Go Home

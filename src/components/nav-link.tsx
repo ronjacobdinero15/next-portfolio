@@ -9,7 +9,7 @@ type NavLinkProps = {
 
 function NavLink({ sectionName, handleToggleMenu }: NavLinkProps) {
   return (
-    <li className={`flex h-8 items-center rounded-lg`}>
+    <li className={`flex h-8 items-center rounded-md`}>
       <Reveal>
         <Link
           className={`hover:text-accent-500 w-full tracking-wide transition-colors duration-100 ease-in-out focus:ring-0`}

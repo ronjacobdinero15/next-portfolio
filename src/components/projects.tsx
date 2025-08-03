@@ -50,13 +50,12 @@ const PROJECT_LIST: ProjectType[] = [
     ],
   },
   {
-    title: "JVL Electronics - Next.js",
+    title: "E-Commerce Demo: Korean Car Parts Store (Next.js)",
     links: {
       liveLink: "https://jvl-electronics.netlify.app/",
     },
     src: jvlPreview,
-    description:
-      "Freelance project - Korean car parts ecommerce w/ Figma designs.",
+    description: "Mockup ecommerce.",
     techs: [
       "Next.js",
       "React.js",

@@ -5,37 +5,6 @@ import { ExperienceType } from "@/constants/types"
 
 const EXPERIENCES: ExperienceType[] = [
   {
-    companyName: "JVL Electronics",
-    employmentType: "Freelance",
-    jobTitle: "Full Stack Developer",
-    dateWorked: "May 2025 - Aug 2025",
-    workedLength: "4 mos",
-    description: [
-      "Designed modern and intuitive user interfaces and wireframes using Figma.",
-      "Built using Next.js for the customer storefront to optimize SEO performance and initial page load speeds, while implemented Vite for the admin dashboard for better user experience.",
-      "Integrated Medusa.js headless commerce platform for the admin panel for faster development.",
-    ],
-    skillsUsed: [
-      "Next.js",
-      "Vite",
-      "Medusa.js",
-      "React.js",
-      "Supabase",
-      "Prisma",
-      "TypeScript",
-      "Tailwind",
-      "Figma",
-      "Zustand",
-      "React Query",
-      "Auth.js",
-      "React Hook Form",
-      "HTML",
-      "CSS",
-      "Git",
-      "GitHub",
-    ],
-  },
-  {
     companyName: "ROC.PH Digital Marketing Services",
     employmentType: "Internship",
     jobTitle: "Frontend Developer | UI/UX Designer",
