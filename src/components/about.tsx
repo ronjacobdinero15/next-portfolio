@@ -31,10 +31,7 @@ function About() {
               needs.
             </Text>
           </Reveal>
-
-          <br />
         </div>
-
         <Technologies />
       </div>
     </Section>

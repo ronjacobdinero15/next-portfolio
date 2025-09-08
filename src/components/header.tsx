@@ -39,7 +39,10 @@ function Header() {
     >
       <div className="container flex h-16 items-center justify-between">
         <Link href="#intro">
-          <LogoIcon className="size-10" aria-label="Ron Jacob portfolio logo" />
+          <LogoIcon
+            className="size-10 select-none"
+            aria-label="Ron Jacob portfolio logo"
+          />
         </Link>
 
         <NavList isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
