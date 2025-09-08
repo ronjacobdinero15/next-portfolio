@@ -66,6 +66,8 @@ const PROJECT_LIST: ProjectType[] = [
       "Figma",
       "Zustand",
       "React Hook Form",
+      "Zod",
+      "Auth.js",
       "ShadcnUI",
       "Radix UI",
       "Git",
